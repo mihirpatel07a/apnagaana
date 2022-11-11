@@ -1,0 +1,266 @@
+
+*
+{
+    margin: 0;
+    padding: 0%;
+     box-sizing: border-box; 
+} 
+
+
+.navbar-header a{
+    font-family: 'Merienda', cursive;
+    font-size: 25px;
+    font-style: italic;
+    font-weight: 500;
+  }
+  
+  a{
+    font-family:cursive;
+    font-size: 17px; 
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+.music_container{
+    width:27rem;
+    height: 37.5rem;
+    border-radius: 2rem;
+    border-color: black;
+    box-shadow: 0, 1.2rem 3rem 0.5rem rgba(0, 0, 0, 0.2);
+    text-align: center;
+    background: linear-gradient(rgb(255 255 255 / 100%), #000000);
+    /* background: linear-gradient(rgb(46, 57, 59, 0.8), rgb(232, 67, 147, 1.0)); */
+    padding-top: 30px;
+    margin-left: calc((50% - 15%));
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+.main_div{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(rgb(0 0 0), rgb(255 255 255 / 16%));
+    /* background: linear-gradient(rgba(0, 0, 0, 0.8), rgb(232, 67, 67)); */
+    display: grid;
+    place-items: center;
+}
+
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.square div{
+    width: 70px;
+    height: 70px;
+    border: 5px solid white;
+    position: absolute;
+}
+
+.square div:nth-child(1){
+    top:20%;
+    left: 40%;
+    animation: square 5s linear infinite;
+}
+
+.square div:nth-child(2){
+    top:10%;
+    left: 60%;
+    animation: square 7s linear infinite;
+}
+
+.square div:nth-child(3){
+    top:60%;
+    left: 10%;
+    animation: square 9s linear infinite;
+}
+
+.square div:nth-child(4){
+    top:50%;
+    left: 40%;
+    animation: square 11s linear infinite;
+}
+
+.square div:nth-child(5){
+    top:40%;
+    left: 60%;
+    animation: square 7s linear infinite;
+}
+
+
+.square div:nth-child(6){
+    top:80%;
+    left: 30%;
+    animation: square 13s linear infinite;
+}
+
+.square div:nth-child(7){
+    top:10%;
+    left: 10%;
+    animation: square 12s linear infinite;
+}
+
+.square div:nth-child(8){
+    top:20%;
+    left: 85%;
+    animation: square 8s linear infinite;
+}
+
+.square div:nth-child(9){
+    top:75%;
+    left: 65%;
+    animation: square 9s linear infinite;
+}
+
+.square div:nth-child(10){
+    top:80%;
+    left: 85%;
+    animation: square 9s linear infinite;
+}
+
+
+
+html 
+{
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.music_container #title
+{
+    font-size: 2.5rem;
+   
+    letter-spacing: 0.1rem;
+    word-spacing: 0.2rem;
+    color: black;
+    margin: 2rem , 0 ,0.5rem , 0;
+    font-weight: 500;
+    text-shadow: 0, 0.3rem 0.5rem rgba(0, 0, 0, 0.3);
+    /* font-family: 'Playfair Display', serif; */
+    font-family: 'Merienda', cursive;
+}
+.music_container #artist
+{
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    letter-spacing: 0.1rem;
+    margin-bottom: 2rem;
+    font-weight: 300;
+    margin-top: 1.5rem;
+    font-family: 'Merienda', cursive;
+    color: black;
+}
+
+
+.image_container
+{
+   width: 20rem;
+   height: 20rem;
+   margin: auto; 
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border-color: #030303;
+    object-fit: cover;
+    box-shadow: 0, 1.2rem 3rem 0.5rem rgba(0, 0, 0, 0.4);
+}
+
+.music_controls
+{
+    width: 20rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    margin-top: 2rem;
+}
+.music_controls.fas {
+    font-size: 2rem;
+    color: #111111;
+    cursor: pointer;
+    filter: drop-shadow(0, 1.2rem 3rem 0.5rem rgba(0, 0, 0, 0.4));
+}
+
+.music_controls .main_button{
+   width: 3rem;
+   height: 3rem;
+   border-radius: 50%;
+   background-color: #111111;
+   color: #f6f6f6;
+   margin-bottom: 1rem;
+   font-size: 1.4rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.music_controls.fas :hover{
+    color: #ff0000;
+    border: #ff0000;
+}
+
+#play:hover{
+    background-color: #ffffff;
+    color: #080000;
+    box-shadow: 0 1rem 2rem 0.2rem rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+#prev:hover{
+    background-color: #ffffff;
+    color: #080000;
+    box-shadow: 0 1rem 2rem 0.2rem rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+#next:hover{
+    background-color: #ffffff;
+    color: #080000;
+    box-shadow: 0 1rem 2rem 0.2rem rgba(0, 0, 0, 0.4);
+    border-radius: 40%;
+    cursor: pointer;
+}
+ 
+
+
+ .anime {
+    animation: rotateplayer 3s linear infinite;
+ }
+
+ @keyframes rotateplayer{
+    from{ 
+    transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+ }
+
+
+
+ @keyframes square{
+    0%{
+        transform: scale(0) translateY(0) rotate(0);
+    }
+    100%{
+        transform: scale(1.2) translateY(-90px) rotate(360deg);
+    }
+ }
